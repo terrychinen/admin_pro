@@ -10,6 +10,8 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 import { Graphic1Component } from './graphic1/graphic1.component';
 import { PagesComponent } from './pages.component';
 import { ProgressComponent } from './progress/progress.component';
+import { PromiseComponent } from './promise/promise.component';
+import { RxjsComponent } from './rxjs/rxjs.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +19,9 @@ import { ProgressComponent } from './progress/progress.component';
     DashboardComponent,
     Graphic1Component,
     PagesComponent,
-    ProgressComponent    
+    ProgressComponent,
+    PromiseComponent,
+    RxjsComponent    
   ],
   exports: [
     DashboardComponent,
