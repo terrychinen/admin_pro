@@ -1,1 +1,41 @@
-<p>progress works!</p>
+<div class="row">
+    <div class="col-12">
+        <div class="card">
+            <div class="card-body">
+
+                <h4 class="card-title">Striped Progress bar</h4>
+                <div class="progress m-t-20">
+                    <div class="progress-bar bg-primary progress-bar-striped active" style="height: 10px"
+                        [style.width]="getProgress1" role="progressbar">
+                    </div><!-- progress-bar bg-info progress-bar-striped active -->
+                </div><!-- progress m-t-20 -->
+                <div class="progress m-t-20">
+                    <div class="progress-bar bg-info progress-bar-striped active" style="height: 10px"
+                        [style.width]="getProgress2" role="progressbar">
+                    </div><!-- progress-bar bg-info progress-bar-striped active -->
+                </div><!-- progress m-t-20 -->
+            </div><!-- card-body -->
+
+        </div><!-- card -->
+    </div><!-- col-12 -->
+</div><!-- row -->
+
+<div class="row">
+    <div class="col-6">
+        <div class="card">
+            <div class="card-body">
+                <app-increment [btnClass]="'btn-primary'" (valueOutput)="progress1 = $event" [progress]="progress1">
+                </app-increment>
+            </div><!-- card-body -->
+        </div><!-- card -->
+    </div><!-- col-6 -->
+
+    <div class="col-6">
+        <div class="card">
+            <div class="card-body">
+                <app-increment [btnClass]="'btn-info'" (valueOutput)="progress2 = $event" [progress]="progress2">
+                </app-increment>
+            </div><!-- card-body -->
+        </div><!-- card -->
+    </div><!-- col-6 -->
+</div><!-- row -->

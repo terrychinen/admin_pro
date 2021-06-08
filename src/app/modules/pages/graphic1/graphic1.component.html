@@ -1,1 +1,25 @@
-<p>graphic1 works!</p>
+<div class="row">
+    <div class="col-6">
+        <app-dona [title]="'Sales'"></app-dona>
+    </div>
+    <!-- col-6 -->
+    <div class="col-6">
+        <app-dona [title]="'Purchases'"></app-dona>
+    </div>
+    <!-- col-6 -->
+</div>
+<!-- row -->
+
+<div class="row">
+    <div class="col-6">
+        <app-dona [title]="'Profits'" 
+                  [chartData]="data"
+                  [chartLabels]="profitsChartLabels"></app-dona>
+    </div>
+    <!-- col-6 -->
+    <div class="col-6">
+        <app-dona [title]="'Resume'"></app-dona>
+    </div>
+    <!-- col-6 -->
+</div>
+<!-- row -->
